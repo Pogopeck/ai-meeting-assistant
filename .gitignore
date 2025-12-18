@@ -1,0 +1,48 @@
+# .gitignore
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Models (large binary files — DO NOT COMMIT!)
+models/
+
+# Logs and uploads (if you generate them)
+logs/
+uploads/
+*.log
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Terraform (optional — if you don't need state in repo)
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.backup
+
+# Environment variables
+.env
+.env.local
+.env.*
+
+# FastAPI / Uvicorn
+uvicorn.log
+gunicorn.log
+
+# Pipenv / Poetry / uv
+Pipfile
+Pipfile.lock
+poetry.lock
+pyproject.toml  # Only include if you're using it for deps
